@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>古谷 仁美 — 職務経歴</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --soft: #6b6b6b;
+    --muted: #999;
+    --bg: #f7fafa;
+    --surface: #ffffff;
+    --line: #d6e8e6;
+    --accent: #4a8a84;
+    --accent-light: #e8f4f3;
+    --accent-bright: #8AB3AE;
+    --tag-bg: #e8f4f3;
+    --learning-bg: #fff8e8;
+    --learning-color: #8a7040;
+    --learning-border: #e8d49a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: #8AB3AE;
+    color: #fff;
+    padding: 64px 40px 52px;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    right: -60px; top: -80px;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.12);
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    right: 60px; bottom: -100px;
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+  }
+
+  .header-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .header-label {
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: rgba(255,255,255,0.85);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: clamp(32px, 6vw, 52px);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+
+  .summary {
+    max-width: 600px;
+    color: rgba(255,255,255,0.72);
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .header-meta {
+    margin-top: 36px;
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.55);
+    font-size: 13px;
+  }
+
+  .meta-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.8);
+    flex-shrink: 0;
+  }
+
+  /* ── LAYOUT ── */
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+
+  /* ── SECTION TITLES ── */
+  .section-title {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 28px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-title::after {
+    content: '';
+    flex: 1;
+  }
+
+  section { margin-bottom: 64px; }
+
+  /* ── SKILLS ── */
+  .skills-grid {
+    display: grid;
+    gap: 14px;
+  }
+
+  .skill-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 16px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 16px 20px;
+  }
+
+  .skill-name {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .skill-detail {
+    font-size: 12px;
+    color: var(--soft);
+    margin-top: 3px;
+  }
+
+  .skill-tag {
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .skill-tag-learning {
+    background: var(--learning-bg);
+    color: var(--learning-color);
+    border: 1px solid var(--learning-border);
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  /* ── CAREER TIMELINE ── */
+  .timeline {
+    position: relative;
+    padding-left: 32px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px; top: 8px; bottom: 8px;
+    width: 1px;
+    background: var(--line);
+  }
+
+  .career-item {
+    position: relative;
+    margin-bottom: 48px;
+  }
+
+  .career-item::before {
+    content: '';
+    position: absolute;
+    left: -27px; top: 6px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--accent-bright);
+    border: 2px solid var(--bg);
+    box-shadow: 0 0 0 1px var(--accent-bright);
+  }
+
+  .career-period {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+  }
+
+  .career-role {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+  }
+
+  .career-company {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .career-position {
+    font-size: 12px;
+    color: var(--soft);
+    background: var(--tag-bg);
+    padding: 2px 9px;
+    border-radius: 12px;
+  }
+
+  .career-subtitle {
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+
+  .career-body {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px 24px;
+  }
+
+  .career-subsection {
+    margin-bottom: 18px;
+  }
+
+  .career-subsection:last-child { margin-bottom: 0; }
+
+  .career-sublabel {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-bright);
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .career-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .career-list li {
+    font-size: 13.5px;
+    color: var(--soft);
+    padding-left: 14px;
+    position: relative;
+    line-height: 1.7;
+  }
+
+  .career-list li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: var(--accent-bright);
+  }
+
+  .achievement-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .achievement-list li {
+    font-size: 13.5px;
+    color: var(--ink);
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.7;
+  }
+
+  .achievement-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-bright);
+    font-size: 12px;
+    top: 2px;
+  }
+
+  /* ── PR ── */
+  .pr-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 600px) {
+    .pr-grid { grid-template-columns: 1fr; }
+  }
+
+  .pr-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 24px 22px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pr-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: var(--accent-bright);
+  }
+
+  .pr-card-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .pr-card-body {
+    font-size: 13px;
+    color: var(--soft);
+    line-height: 1.8;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center;
+    padding: 32px;
+    font-size: 12px;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    header { padding: 48px 24px 40px; }
+    .header-meta { flex-direction: column; gap: 12px; }
+    .skill-row { grid-template-columns: 1fr; }
+    .skill-tag { align-self: flex-start; }
+    .timeline { padding-left: 24px; }
+  }
+
+  /* ── FADE IN ── */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 0.5s ease forwards;
+  }
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-in:nth-child(1) { animation-delay: 0.05s; }
+  .fade-in:nth-child(2) { animation-delay: 0.12s; }
+  .fade-in:nth-child(3) { animation-delay: 0.19s; }
+  .fade-in:nth-child(4) { animation-delay: 0.26s; }
+  .fade-in:nth-child(5) { animation-delay: 0.33s; }
+  .fade-in:nth-child(6) { animation-delay: 0.40s; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-label">職務経歴書 — 2026年6月現在</div>
+    <h1>古谷 仁美</h1>
+    <p class="summary">アパレル販売・教育・ブライダル・営業事務・EC運営など、多様な業界で14年以上の<span style="white-space:nowrap">実務経験。</span>顧客視点を大切にしながら、企画から製造まで幅広い業務に携わっています。</p>
+    <div class="header-meta">
+      <div class="meta-item"><span class="meta-dot"></span>商品企画・製造（現職）</div>
+      <div class="meta-item"><span class="meta-dot"></span>EC運営・営業事務</div>
+      <div class="meta-item"><span class="meta-dot"></span>ブライダル演出・接客販売</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- スキル -->
+  <section>
+    <div class="section-title">Skills</div>
+    <div class="skills-grid">
+      <div class="skill-row fade-in">
+        <div>
+          <div class="skill-name">Excel</div>
+          <div class="skill-detail">実績データの管理・配信、資料作成</div>
+        </div>
+        <span class="skill-tag">実務3年</span>
+      </div>
+      <div class="skill-row fade-in">
+        <div>
+          <div class="skill-name">PowerPoint</div>
+          <div class="skill-detail">取引先向けマニュアル・社内プレゼン資料作成</div>
+        </div>
+        <span class="skill-tag">実務3年</span>
+      </div>
+      <div class="skill-row fade-in">
+        <div>
+          <div class="skill-name">FileMaker</div>
+          <div class="skill-detail">顧客情報・実績データの入力・管理</div>
+        </div>
+        <span class="skill-tag">実務4年</span>
+      </div>
+      <div class="skill-row fade-in">
+        <div>
+          <div class="skill-name">ECプラットフォーム（Amazon / メルカリ / ヤフオク）</div>
+          <div class="skill-detail">商品登録・在庫管理・顧客対応・Amazon FBA</div>
+        </div>
+        <span class="skill-tag">実務2年</span>
+      </div>
+      <div class="skill-row fade-in">
+        <div>
+          <div class="skill-name">職業用ミシン</div>
+          <div class="skill-detail">猫首輪など製品の縫製・製造</div>
+        </div>
+        <span class="skill-tag">実務2年</span>
+      </div>
+      <div class="skill-row fade-in">
+        <div>
+          <div class="skill-name">Canva</div>
+          <div class="skill-detail">デザイン制作（趣味5年・今月より実務使用開始）</div>
+        </div>
+        <span class="skill-tag">実務使用中</span>
+      </div>
+      <div class="skill-row fade-in">
+        <div>
+          <div class="skill-name">Adobe Photoshop</div>
+          <div class="skill-detail">バナー制作などグラフィックデザインを独学中</div>
+        </div>
+        <span class="skill-tag-learning">学習中（約8ヶ月）</span>
+      </div>
+      <div class="skill-row fade-in">
+        <div>
+          <div class="skill-name">Adobe Premiere Pro</div>
+          <div class="skill-detail">動画編集を独学中</div>
+        </div>
+        <span class="skill-tag-learning">学習中（約6ヶ月）</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 職務経歴 -->
+  <section>
+    <div class="section-title">Career</div>
+    <div class="timeline">
+
+      <!-- ぽぽねこ -->
+      <div class="career-item fade-in">
+        <div class="career-period">2024年4月 ─ 現在（約2年2ヶ月）</div>
+        <div class="career-role">
+          <span class="career-company">株式会社ぽぽねこ</span>
+          <span class="career-position">ソーイングスタッフ</span>
+        </div>
+        <div class="career-subtitle">商品企画・製造</div>
+        <div class="career-body">
+          <div class="career-subsection">
+            <div class="career-sublabel">業務内容</div>
+            <ul class="career-list">
+              <li>猫首輪・付属品の製造（ミシン作業を含む）</li>
+              <li>新商品のアイデア出し・顧客ニーズを反映した商品企画</li>
+              <li>試作品の制作・調整（サンプル作成）</li>
+              <li>備品・消耗品の発注・在庫管理</li>
+              <li>外部パタンナーとのメール対応、顧客・配達業者への電話対応</li>
+            </ul>
+          </div>
+          <div class="career-subsection">
+            <div class="career-sublabel">主な実績</div>
+            <ul class="achievement-list">
+              <li>猫用首輪・術後服の企画から試作・開発まで一貫して担当</li>
+              <li>「猫が嫌がらない」「快適に着用できる」と高評価レビューを多数獲得</li>
+              <li>首輪はまとめ買い・リピート購入が発生、商品によっては発売1ヶ月以内に完売</li>
+              <li>軽量素材・安全性・着脱のしやすさに配慮した設計と外部パタンナーとの連携</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- カンザエモン -->
+      <div class="career-item fade-in">
+        <div class="career-period">2021年12月 ─ 2024年3月（約2年3ヶ月）</div>
+        <div class="career-role">
+          <span class="career-company">株式会社カンザエモン</span>
+          <span class="career-position">商品登録スタッフ</span>
+        </div>
+        <div class="career-subtitle">商品登録・EC運営事務</div>
+        <div class="career-body">
+          <div class="career-subsection">
+            <div class="career-sublabel">業務内容</div>
+            <ul class="career-list">
+              <li>検品・梱包発送・商品撮影・説明文作成</li>
+              <li>ECサイト商品登録（Amazon・メルカリ・ヤフオク）・在庫管理・顧客対応</li>
+              <li>Amazon FBA納品業務（セラーセントラル使用）</li>
+              <li>後輩指導・外注管理、土曜日は単独出勤で全業務を自走対応</li>
+            </ul>
+          </div>
+          <div class="career-subsection">
+            <div class="career-sublabel">主な実績</div>
+            <ul class="achievement-list">
+              <li>検品〜商品登録〜出荷・発送まで正確かつスピーディーな作業品質を評価される</li>
+              <li>1商品15分の時間制限内でも丁寧な梱包を徹底し、後輩スタッフの指導を担当</li>
+              <li>カメラ・ゲーム機の専門知識を活かし、動作確認・状態判断を迅速化してミス削減</li>
+              <li>社内外スタッフから分かりやすい説明・丁寧なコミュニケーションを高評価</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Human Investment -->
+      <div class="career-item fade-in">
+        <div class="career-period">2017年9月 ─ 2020年12月（約3年3ヶ月）</div>
+        <div class="career-role">
+          <span class="career-company">株式会社Human Investment</span>
+          <span class="career-position">事務スタッフ</span>
+        </div>
+        <div class="career-subtitle">営業事務（つくば本社）</div>
+        <div class="career-body">
+          <div class="career-subsection">
+            <div class="career-sublabel">業務内容</div>
+            <ul class="career-list">
+              <li>通信キャリア・二次代理店との連絡調整（メール／電話）</li>
+              <li>実績データの集計・管理・配信（Excel・FileMaker・クラウドシステム）</li>
+              <li>販売員登録・情報管理、販促品の受発注、契約書作成・電子契約手続き</li>
+              <li>取引先・社内向け資料・マニュアル作成（PowerPoint）</li>
+            </ul>
+          </div>
+          <div class="career-subsection">
+            <div class="career-sublabel">主な実績</div>
+            <ul class="achievement-list">
+              <li>タスク管理と情報共有の徹底により、全業務を期限内に安定して完遂</li>
+              <li>取引先向け業務マニュアルを新規作成し、問い合わせ件数の削減と業務効率化に貢献</li>
+              <li>図解・スクリーンショット付きで誰でも自己解決できるマニュアルを構築</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEM -->
+      <div class="career-item fade-in">
+        <div class="career-period">2013年3月 ─ 2017年3月（約4年）</div>
+        <div class="career-role">
+          <span class="career-company">株式会社FEM</span>
+          <span class="career-position">披露宴音響スタッフ</span>
+        </div>
+        <div class="career-subtitle">音響・映像演出（茨城営業所）</div>
+        <div class="career-body">
+          <div class="career-subsection">
+            <div class="career-sublabel">業務内容</div>
+            <ul class="career-list">
+              <li>披露宴・挙式における音響・映像演出のオペレーション</li>
+              <li>新郎新婦とのBGM・映像商品に関する打ち合わせ、余興サポート</li>
+              <li>演出・映像商品の受発注・内容確認・最終チェック</li>
+              <li>プランナー・パートナー企業とのスケジュール調整・進行確認</li>
+            </ul>
+          </div>
+          <div class="career-subsection">
+            <div class="career-sublabel">主な実績</div>
+            <ul class="achievement-list">
+              <li>楽曲知識を活かしシーンごとの演出提案を行い、顧客満足度向上に貢献</li>
+              <li>映像商品のニーズ提案から高単価セット商品の受注獲得につなげた</li>
+              <li>新規顧客向け演出体験イベントを企画・サポートし、新規契約獲得に貢献</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- イー・エス・ティー -->
+      <div class="career-item fade-in">
+        <div class="career-period">2011年7月 ─ 2013年3月（約1年8ヶ月）</div>
+        <div class="career-role">
+          <span class="career-company">株式会社イー・エス・ティー</span>
+          <span class="career-position">事務スタッフ</span>
+        </div>
+        <div class="career-subtitle">学習塾事務（守谷駅前校・ひたち野うしく校 等）</div>
+        <div class="career-body">
+          <div class="career-subsection">
+            <div class="career-sublabel">業務内容</div>
+            <ul class="career-list">
+              <li>生徒・保護者・来客対応、電話応対などの受付窓口業務</li>
+              <li>新入生情報・受講データの入力・管理（FileMaker）</li>
+              <li>校内掲示物・チラシ・郵送DM・面談資料の作成と整理</li>
+            </ul>
+          </div>
+          <div class="career-subsection">
+            <div class="career-sublabel">主な実績</div>
+            <ul class="achievement-list">
+              <li>受講状況を事前整理・情報共有し、講師が生徒対応を円滑に行える環境を構築</li>
+              <li>受付・電話対応から資料作成まで幅広く担い、校舎運営を支援</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- レイ・カズン -->
+      <div class="career-item fade-in">
+        <div class="career-period">2010年4月 ─ 2011年3月（約11ヶ月）</div>
+        <div class="career-role">
+          <span class="career-company">株式会社レイ・カズン</span>
+          <span class="career-position">店頭販売スタッフ</span>
+        </div>
+        <div class="career-subtitle">アパレル販売（あみプレミアムアウトレット店）</div>
+        <div class="career-body">
+          <div class="career-subsection">
+            <div class="career-sublabel">業務内容</div>
+            <ul class="career-list">
+              <li>婦人服カジュアルブランド「Ray Cassin」における接客・販売業務</li>
+              <li>学生から主婦まで幅広い年齢層へのコーディネート提案</li>
+              <li>商品陳列・整理、タイムセール時の店頭呼び込み対応</li>
+            </ul>
+          </div>
+          <div class="career-subsection">
+            <div class="career-sublabel">主な実績</div>
+            <ul class="achievement-list">
+              <li>年齢・ライフスタイルに合わせた接客と組み合わせ提案で着用イメージを具体化</li>
+              <li>接客から裏方業務まで担い、店舗全体の円滑な運営に貢献</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 自己PR -->
+  <section>
+    <div class="section-title">Self PR</div>
+    <div class="pr-grid">
+      <div class="pr-card fade-in">
+        <div class="pr-card-title">顧客視点に立った企画提案力と実行力</div>
+        <div class="pr-card-body">ブライダルでの演出イベント企画から、現職の猫用商品企画まで、顧客の喜びを最大化することを軸に提案・実行してきました。飼い主と愛猫の双方の視点に立つことで、ニーズを的確に捉えたアイデアを生み出しています。</div>
+      </div>
+      <div class="pr-card fade-in">
+        <div class="pr-card-title">相手目線を意識した丁寧な業務改善力</div>
+        <div class="pr-card-body">「相手にとってわかりやすいか」「安心して進められるか」を常に意識。ミス発生時には原因を整理して再発防止策を講じ、期限から逆算したスケジュール管理と早めの相談・共有を徹底しています。</div>
+      </div>
+      <div class="pr-card fade-in">
+        <div class="pr-card-title">分かりやすい資料作成・伝達能力</div>
+        <div class="pr-card-body">専門用語を避け図や画像を多用したマニュアルを作成し、ITに不慣れな方でも直感的に理解できる設計に。後輩指導では相手の理解度に合わせた説明を心掛け「教え方が分かりやすい」と評価されてきました。</div>
+      </div>
+      <div class="pr-card fade-in">
+        <div class="pr-card-title">企画から製造まで一貫するモノづくりへの情熱</div>
+        <div class="pr-card-body">アイデア出し・試作・縫製まで全工程に関わり、自分の工夫が製品に反映される喜びを原動力にしています。未経験の業務にも調べ・相談しながら着実に取り組み、猫用商品を実際に商品化してきました。</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  古谷 仁美 — 職務経歴書 2026年6月現在
+</footer>
+
+</body>
+</html>
